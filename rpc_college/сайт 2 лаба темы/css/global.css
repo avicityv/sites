@@ -1,0 +1,253 @@
+:root {
+  --general-text: #ffffff;
+  --accent-text: #75bdc7;
+  --general-bg: #63a0f0cb;
+  --accent-bg: #5cb8beec;
+  --accent-color: #779bff;
+  --hover-color: #4538ff;
+  --color-grey: #b197b3;
+  --transition: all 0.3s ease-in-out;
+  --border-radius-20: 20px;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5vw;
+}
+
+.body {
+  font-family: "Montserrat", "Arial", sans-serif;
+  line-height: 1.5;
+  color: var(--general-text);
+  background: var(--general-bg);
+}
+
+.body--opened-menu,
+.body--opened-modal {
+  overflow: hidden;
+}
+
+.wrapper {
+  min-height: 100%;
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.container {
+  max-width: 1310px;
+  margin: 0 auto;
+  padding: 0 15px;
+  height: 100%;
+}
+
+.section__title {
+  font-family: "Gabriola";
+  font-size: 74px;
+  line-height: 0.82;
+  color: #008899;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px 36px;
+  border-radius: 60px;
+  background-color: var(--accent-color);
+  font-weight: 500;
+  line-height: 1.6;
+  transition: var(--transition);
+}
+
+.btn:hover {
+  background-color: var(--hover-color);
+}
+
+/* form */
+.form__label {
+  position: relative;
+  display: block;
+  line-height: 1.2;
+}
+
+.form__input {
+  padding: 20px 28px;
+  width: 100%;
+  border: 1px solid #ac907a;
+  border-radius: 100px;
+  background: transparent;
+  font-size: 16px;
+  transition: var(--transition);
+}
+
+.form__input + span {
+  position: absolute;
+  top: 12px;
+  left: 28px;
+  color: #ac907a;
+  font-size: 11px;
+  text-align: left;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.form__input::placeholder {
+  transition: var(--transition);
+  color: #ac907a;
+}
+
+.form__input:hover {
+  border-color: var(--accent-color);
+}
+
+.form__input:hover::placeholder {
+  color: var(--accent-color);
+}
+
+.form__input:focus {
+  border-color: var(--accent-color);
+  padding: 26px 28px 12px;
+}
+
+.form__input:focus::placeholder {
+  visibility: hidden;
+}
+
+.form__input:focus.form__input + span {
+  opacity: 1;
+  visibility: visible;
+}
+
+.form__check {
+  position: relative;
+  appearance: none;
+  flex-shrink: 0;
+  width: 16px;
+  height: 16px;
+  border: 1.5px solid #ac907a;
+  border-radius: 4px;
+  transition: var(--transition);
+  cursor: pointer;
+}
+
+.form__check::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  background-image: url("../images/check.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  opacity: 0;
+  transition: var(--transition);
+}
+
+.form__check:checked {
+  border-color: var(--accent-color);
+  background-color: var(--accent-color);
+}
+
+.form__check:checked::before {
+  opacity: 1;
+}
+
+/* modal */
+.body--opened-modal .modal {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  inset: 0;
+  padding: 15px;
+  background-color: #00000048;
+  z-index: 20;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition);
+}
+
+.modal__window {
+  position: relative;
+  max-width: 428px;
+  padding: 133px 60px 60px;
+  border-radius: var(--border-radius-20);
+  background: deepskyblue;
+}
+
+.modal__cancel {
+  position: absolute;
+  display: block;
+  width: 24px;
+  height: 24px;
+  top: 10px;
+  right: 10px;
+}
+
+.modal__cancel path,
+.modal__cancel rect {
+  transition: var(--transition);
+}
+
+.modal__cancel:hover path,
+.modal__cancel:hover rect {
+  stroke: #ac907a;
+}
+
+.modal__decor {
+  position: absolute;
+  display: block;
+  top: -65px;
+  margin-left: 13px;
+}
+
+.modal__title {
+  margin-bottom: 10px;
+  max-width: 308px;
+  font-size: 42px;
+  line-height: 90%;
+}
+
+.modal__text {
+  margin-bottom: 30px;
+  max-width: 308px;
+}
+
+.modal__form {
+  max-width: 308px;
+  width: 100%;
+}
+
+.modal__form-label {
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.modal__input + span {
+  position: absolute;
+  top: 12px;
+  left: 28px;
+  color: #ac907a;
+  font-size: 11px;
+  text-align: left;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal__btn {
+  width: 100%;
+}

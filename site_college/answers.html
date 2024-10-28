@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <style>
+        @import url(/Topor-Regular.ttf)
+        </style>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Культура и искусство в городе</title>
+</head>
+<body>
+    <header>
+        <div class="head">
+            <h1 style="color: red;">НЕ fearless_</h1>
+            <a href="index.html">На главную</a>
+        </div>
+    </header>
+    <h1>2.1 Теоретические вопросы подготовки к лабораторной работе</h1>
+
+    <h2>1. Структура HTML документа</h2>
+    <p>HTML-документ состоит из следующих обязательных элементов:</p>
+    <ul>
+        <li><code>&lt;!DOCTYPE html&gt;</code> — объявление типа документа (HTML5).</li>
+        <li><code>&lt;html&gt;</code> — корневой элемент документа.</li>
+        <li><code>&lt;head&gt;</code> — содержит метаданные, такие как заголовок и ссылки на стили.</li>
+        <li><code>&lt;body&gt;</code> — основной содержательный блок страницы, включает текст, изображения, видео и другие элементы.</li>
+    </ul>
+
+    <h2>2. Новые семантические элементы HTML5</h2>
+    <p>HTML5 ввел несколько новых семантических элементов, которые лучше описывают структуру страницы:</p>
+    <ul>
+        <li><code>&lt;header&gt;</code> — секция для заголовка или навигации.</li>
+        <li><code>&lt;footer&gt;</code> — секция для футера или контактной информации.</li>
+        <li><code>&lt;article&gt;</code> — независимая часть контента.</li>
+        <li><code>&lt;section&gt;</code> — логическая группа контента.</li>
+        <li><code>&lt;aside&gt;</code> — боковое содержание, не связанное напрямую с основным контентом.</li>
+        <li><code>&lt;nav&gt;</code> — блок для навигации по сайту.</li>
+    </ul>
+
+    <h2>3. Семантические элементы для работы со структурой страницы</h2>
+    <p>Семантические элементы для структуры страницы в HTML5 включают:</p>
+    <ul>
+        <li><code>&lt;header&gt;</code></li>
+        <li><code>&lt;nav&gt;</code></li>
+        <li><code>&lt;section&gt;</code></li>
+        <li><code>&lt;article&gt;</code></li>
+        <li><code>&lt;footer&gt;</code></li>
+    </ul>
+
+    <h2>4. Регулярные выражения в HTML формах</h2>
+    <p>Регулярные выражения в HTML используются для валидации полей ввода через атрибут <code>pattern</code>. Они позволяют задавать шаблоны для ввода, например, для проверки корректности email или номера телефона.</p>
+
+    <h2>5. Типы позиционирования элементов</h2>
+    <p>Существует несколько типов позиционирования элементов в CSS:</p>
+    <ul>
+        <li><strong>Static</strong> — стандартное позиционирование элементов в потоке документа.</li>
+        <li><strong>Relative</strong> — относительное позиционирование элемента относительно его исходного местоположения.</li>
+        <li><strong>Absolute</strong> — абсолютное позиционирование относительно ближайшего предка с относительным или абсолютным позиционированием.</li>
+        <li><strong>Fixed</strong> — фиксированное позиционирование относительно окна браузера.</li>
+        <li><strong>Sticky</strong> — комбинация относительного и фиксированного позиционирования, элемент фиксируется при прокрутке.</li>
+    </ul>
+
+    <h1>2.2 Контрольные вопросы</h1>
+
+    <h2>1. Пример структуры HTML5 документа</h2>
+    <pre>
+        &lt;!DOCTYPE html&gt;
+        &lt;html lang="ru"&gt;
+        &lt;head&gt;
+            &lt;meta charset="UTF-8"&gt;
+            &lt;title&gt;Пример HTML5 документа&lt;/title&gt;
+        &lt;/head&gt;
+        &lt;body&gt;
+            &lt;header&gt;Заголовок сайта&lt;/header&gt;
+            &lt;nav&gt;Навигация&lt;/nav&gt;
+            &lt;main&gt;
+                &lt;article&gt;Основной контент&lt;/article&gt;
+            &lt;/main&gt;
+            &lt;footer&gt;Футер сайта&lt;/footer&gt;
+        &lt;/body&gt;
+        &lt;/html&gt;
+    </pre>
+
+    <h2>2. Какие новые семантические элементы появились в HTML5?</h2>
+    <p>Новые семантические элементы HTML5:</p>
+    <ul>
+        <li><code>&lt;article&gt;</code></li>
+        <li><code>&lt;section&gt;</code></li>
+        <li><code>&lt;nav&gt;</code></li>
+        <li><code>&lt;aside&gt;</code></li>
+        <li><code>&lt;header&gt;</code></li>
+        <li><code>&lt;footer&gt;</code></li>
+    </ul>
+
+    <h2>3. Семантические элементы для текстового содержимого</h2>
+    <ul>
+        <li><code>&lt;article&gt;</code> — используется для независимого фрагмента содержимого.</li>
+        <li><code>&lt;section&gt;</code> — логическая секция документа.</li>
+        <li><code>&lt;nav&gt;</code> — для секций с навигационными ссылками.</li>
+        <li><code>&lt;aside&gt;</code> — для боковой информации, не связанной напрямую с основным содержимым.</li>
+    </ul>
+
+    <h2>4. Элементы для поддержки аудио, видео и подключаемых модулей</h2>
+    <ul>
+        <li><code>&lt;audio&gt;</code> — элемент для воспроизведения аудиофайлов.</li>
+        <li><code>&lt;video&gt;</code> — элемент для воспроизведения видеофайлов.</li>
+        <li><code>&lt;embed&gt;</code> — для встраивания сторонних объектов, например, флеш-анимации.</li>
+        <li><code>&lt;object&gt;</code> — для встраивания объектов, таких как PDF-файлы.</li>
+        <li><code>&lt;iframe&gt;</code> — для встраивания сторонних веб-страниц.</li>
+    </ul>
+
+    <h2>5. Типы позиционирования</h2>
+    <ul>
+        <li><strong>Static</strong> — по умолчанию.</li>
+        <li><strong>Relative</strong> — позиционирование относительно самого себя.</li>
+        <li><strong>Absolute</strong> — абсолютное позиционирование относительно родителя.</li>
+        <li><strong>Fixed</strong> — фиксированное относительно окна браузера.</li>
+        <li><strong>Sticky</strong> — "липкое" позиционирование.</li>
+    </ul>
+
+    <h2>6. Позиционирование внутри элемента</h2>
+    <p>Внутреннее позиционирование элементов можно контролировать с помощью таких свойств, как <code>text-align</code> для текста или <code>align-items</code> и <code>justify-content</code> для элементов flex-контейнеров.</p>
+
+    <h2>7. Составные компоненты формы</h2>
+    <p>Основные элементы формы:</p>
+    <ul>
+        <li><code>&lt;input&gt;</code> — поле ввода.</li>
+        <li><code>&lt;textarea&gt;</code> — многострочное текстовое поле.</li>
+        <li><code>&lt;select&gt;</code> — выпадающий список.</li>
+        <li><code>&lt;button&gt;</code> — кнопка.</li>
+        <li><code>&lt;label&gt;</code> — метка для поля ввода.</li>
+    </ul>
+
+    <h2>8. Глобальные атрибуты HTML5</h2>
+    <p>К глобальным атрибутам в HTML5 относятся:</p>
+    <ul>
+        <li><code>class</code> — задает класс для элемента.</li>
+        <li><code>id</code> — уникальный идентификатор элемента.</li>
+        <li><code>style</code> — inline-стили для элемента.</li>
+        <li><code>data-*</code> — пользовательские атрибуты для хранения данных.</li>
+        <li><code>title</code> — дополнительная информация, всплывающая при наведении на элемент.</li>
+    </ul>
+        </div>
+</body>
+</html>
