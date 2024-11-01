@@ -1,0 +1,122 @@
+.d1 {
+    text-align: center;
+    animation: wave1 4s 0s infinite;
+    color: rgb(0, 0, 0);
+    height: 30px;
+    font-size: 500%;
+    line-height: 60px;
+    margin: 0;
+}
+
+.d2 {
+    text-align: center;
+    animation: wave2  4s 0s infinite ;
+    color: rgb(0, 0, 0);
+    height: 30px;
+    font-size: 500%;
+    line-height: 60px;
+    margin: 0;
+}
+
+.d3 {
+    text-align: center;
+    animation: wave3 4s 0s infinite;
+    color: rgb(0, 0, 0);
+    height: 30px;
+    font-size: 500%;
+    line-height: 60px;
+    margin: 0;
+ 
+}
+
+.d4 {
+    text-align: center;
+    animation: wave4  4s 0s infinite ;
+    color: rgb(0, 0, 0);
+    height: 30px;
+    font-size: 500%;
+    line-height: 60px;
+    margin: 0;
+
+}
+
+.d5 {
+    text-align: center;
+    animation: wave5 4s 0s infinite;
+    color: rgb(0, 0, 0);
+    height: 30px;
+    font-size: 500%;
+    line-height: 60px;
+    margin: 0;
+
+}
+
+.d6 {
+    text-align: center;
+    animation: wave6  4s 0s infinite ;
+    color: rgb(0, 0, 0);
+    height: 30px;
+    font-size: 500%;
+    line-height: 60px;
+    margin: 0;
+}
+
+.d7{
+    text-align: center;
+    animation: wave7 4s 0s infinite;
+    color: rgb(0, 0, 0);
+    height: 30px;
+    font-size: 500%;
+    line-height: 60px;
+    margin: 0;
+}
+
+@keyframes wave1 {
+    33% {
+        transform: translateX(10%);
+    }
+    75% {
+        transform: translateX(-1%);
+    }
+}
+
+@keyframes wave2 {
+    33% {
+        transform: translateX(-10%);
+    }
+    75% {transform: translateX(-2%)}
+}
+
+@keyframes wave3 {
+    33% {
+        transform: translateX(10%);
+    }
+    75% {transform: translateX(-3%)}
+}
+
+@keyframes wave4 {
+    33% {
+        transform: translateX(-10%);
+    }
+    75% {transform: translateX(-2%)}
+}
+
+@keyframes wave5 {
+    33% {
+        transform: translateX(10%);
+    }
+    75% {transform: translateX(-1.5%)}
+}
+@keyframes wave6 {
+    33% {
+        transform: translateX(-10%);
+    }
+    75% {transform: translateX(1%)}
+}
+
+@keyframes wave7 {
+    33% {
+        transform: translateX(10%);
+    }
+    75% {transform: translateX()}
+}
