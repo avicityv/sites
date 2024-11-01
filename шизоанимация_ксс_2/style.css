@@ -1,0 +1,76 @@
+.points{
+    display:flex;
+    justify-content: center;
+    flex-flow:row;
+    color: rgb(204, 79, 79);
+    height: 30px;
+    font-size: 1000%;
+    line-height: 60px;
+    margin: 0;
+    white-space: nowrap;
+}
+
+.pfirst {
+    display: flex;
+    animation: tiktak1 10s 0s infinite;
+}
+
+.plast {
+    display: flex;
+    animation: tiktak2 10s 0s infinite;
+    
+}
+
+
+@keyframes tiktak1 {
+    7.5% {
+        transform: translate(-200%, -100%);
+    }
+    14% {
+        transform: translate(0%, 0%);
+    }
+    30% {
+        transform: translate(-200%, -100%);
+    }
+    36% {
+        transform: translate(0%, 0%);
+    }
+
+    52.5% {
+        transform: translate(0%, 0%);
+    }
+
+    70% {
+        transform: translate(-200%, -100%);
+    }
+    92.5% {
+        transform: translate(0%, 0%);
+    }
+
+}
+
+@keyframes tiktak2 {
+    9% {
+        transform: translate(0%, 0%);
+    }
+    15% {
+        transform: translate(200%, -100%);
+    }
+    24% {
+        transform: translate(0%, 0%);
+    }
+    36%{
+        transform: translate(0%, 0%);
+    }
+    44.25% {
+        transform: translate(100%, -50%);
+    }
+    52.5% {
+        transform: translate(0%, 0%);
+    }
+    100% {
+        transform: translate(0%, 0%);
+    }
+
+
+}
